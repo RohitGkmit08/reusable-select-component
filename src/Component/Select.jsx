@@ -1,29 +1,23 @@
 import { useState } from "react";
+import "./Select.css";
 
 const Select = ({ options, value, onChange }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div style={{ width: "100px" }}>
-   
-      <div onClick={() => setOpen(!open)}
-        style={{
-          border: "1px solid #000000ff",
-          cursor: "pointer",
-          padding:"5px"
-        }}
-      >
+    <div className="select-container">
+      <div className="select-handler" onClick={() => setOpen(!open)}>
         {value || "Select an option"}
       </div>
 
-      {open && (
-        <div style={{ border: "1px solid #000000ff" }}>
+      {open && (<div className="select-dropdown">
           {options.map(option => (
             <div
               key={option}
+              className="select-option"
               onClick={() => {
-                onChange(option); 
-                setOpen(false);   
+                onChange(option);
+                setOpen(false);
               }}
             >
               {option}

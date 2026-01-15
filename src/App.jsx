@@ -1,24 +1,11 @@
-import { useState } from "react";
-import Select from "./Component/Select";
-
+import React from 'react'
+import Framework from './Component/Framework'
 const App = () => {
-  const frameworks = ["React", "Vue", "Angular"];
-
-  const [selectedFramework, setSelectedFramework] = useState("");
-
   return (
-    <div style={{ padding: "40px" }}>
-      <h2>Choose a framework</h2>
-
-      <Select
-        options={frameworks}
-        value={selectedFramework}
-        onChange={setSelectedFramework}
-      />
-
-      <p>Selected value: {selectedFramework}</p>
+    <div>
+      <Framework/>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
