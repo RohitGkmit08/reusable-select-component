@@ -1,0 +1,25 @@
+.select-container {
+  width: 200px;
+  position: relative;
+}
+
+.select-handler {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.select-dropdown {
+  border: 1px solid #000;
+  margin-top: 4px;
+  background-color: #fff;
+  background-color: cadetblue;
+}
+
+
+.select-option {
+  padding: 8px;
+  cursor: pointer;
+}

@@ -1,8 +1,10 @@
-function App() {
+import React from 'react'
+import Framework from './Component/Framework'
+const App = () => {
   return (
-    <>
-      app file
-    </>
+    <div>
+      <Framework/>
+    </div>
   )
 }
 
